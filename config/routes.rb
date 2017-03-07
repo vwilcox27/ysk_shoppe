@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  get 'contact/faq'
+
   mount Shoppe::Engine => "/shoppe"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -6,16 +9,21 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
+  get 'home/index'
+  root to: "home#index"
+
+  get "about", to: "about#show", as: "about"
+
+  get "contact", to: "contact#show", as: "contact"
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
-  root to: "products#index"
 
-  get "lookbook/:permalink", to: "lookbook#show", as: "lookbook"
-  post "lookbook/:permalink", to: "lookbook#buy", as: "look"
-  # root to: "lookbook#index"
 
-  get "art/:permalink", to: "art#show", as: "art"
-  post "art/:permalink", to: "art#buy", as: "art2"
+  get "lookbook", to: "lookbook#show", as: "lookbook"
+  # post "lookbook/:permalink", to: "lookbook#buy", as: "lookbook"
+
+  get "art", to: "art#show", as: "art"
+  # post "art/:permalink", to: "art#buy", as: "art2"
 
   get "basket", to: "orders#show"
   delete "basket", to: "orders#destroy"
