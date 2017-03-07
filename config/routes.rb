@@ -16,12 +16,22 @@ Rails.application.routes.draw do
 
   get "art/:permalink", to: "art#show", as: "art"
   post "art/:permalink", to: "art#buy", as: "art2"
+
+  get "basket", to: "orders#show"
+  delete "basket", to: "orders#destroy"
+
+  match "checkout", to: "orders#checkout", as: "checkout", via: [:get, :patch]
+  match "checkout/pay", to: "orders#payment", as: "checkout_payment", via: [:get, :post]
+  match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
+
+  get "checkout/paypal", to: "orders#paypal"
+
   # root to: "art#index"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+  #    get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
