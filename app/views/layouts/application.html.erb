@@ -5,24 +5,39 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+  <![endif]-->
 </head>
 <body>
-<% if current_order %>
-    <p style="border:1px solid black;padding:10px;">
-      You have <%= pluralize current_order.total_items, 'item'%> in your cart which cost
-      <%= number_to_currency current_order.total_before_tax %>.
-    </p>
-<% end %>
-<%= link_to "Home", root_path %>
-<%= link_to "Art", art_path %>
-<%= link_to "LookBook", lookbook_path %>
-<%= link_to "Products", products_path %>
-<%= link_to "About Us", about_path %>
-<%= link_to "Contact Us", contact_path %>
-<%= link_to "View basket", basket_path %>
-<%= flash[:notice] %>
-<%= link_to "Checkout", checkout_path %>
-<%= yield %>
-
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "YSK [Exclusive]", '#', id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Art", art_path %></li>
+        <li><%= link_to "LookBook", lookbook_path %></li>
+        <li><%= link_to "Clothing", clothing_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "View basket", basket_path %></li>
+        <li><%= flash[:notice] %></li>
+        <li><%= link_to "Checkout", checkout_path %></li>
+        <% if current_order %>
+            <p style="border:1px solid black;padding:10px;">
+              You have <%= pluralize current_order.total_items, 'item'%> in your cart which cost
+              <%= number_to_currency current_order.total_before_tax %>.
+            </p>
+        <% end %>
+        <%= yield %>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="container">
+  <%= yield %>
+</div>
 </body>
 </html>

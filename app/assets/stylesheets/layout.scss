@@ -1,7 +1,7 @@
 header {
   font-family: "Amatic SC", cursive;
   font-size: 20px;
-  background-color: #666666;
+  background-color: #f2f5f8;
 
 }
 
@@ -28,6 +28,20 @@ a {
   border-radius: 3px;
 }
 
+.app-logo {
+  a {
+    font-family: 'Amatic SC', Amatic, sans-serif;
+    font-size: 1.4em;
+    color: rgba(255, 255, 255, 0.71);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px rgba(218, 62, 62, 0.32);
+
+    b {
+      color: rgba(255, 153, 153, 0.83);
+    }
+  }
+}
 
 //font-family: 'Amatic SC', cursive;
 //font-family: 'Inconsolata', monospace;

@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get "art", to: "art#show", as: "art"
   # post "art/:permalink", to: "art#buy", as: "art2"
 
+  get "clothing", to: "clothing#show", as: "clothing"
   get "basket", to: "orders#show"
   delete "basket", to: "orders#destroy"
 

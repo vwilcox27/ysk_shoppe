@@ -15,5 +15,6 @@
  *= require reset
  *= require layout
  *= require header
- *= require footer
+ *= require footer.css
 */
+
