@@ -1,0 +1,17 @@
+<% cache do %>
+    <footer class="app-footer">
+      <div class="img"></div>
+      <div class="app-cont">
+        <h1 class="app-logo">
+          <%= link_to :root do %>
+              Books <b>on</b> Rails
+          <% end %>
+        </h1>
+
+        <div class="copy">
+          <%= Time.now.year %> &copy; <%= link_to 'Lugo Labs', 'http://www.lugolabs.com' %>.
+          Data by <%= link_to 'Amazon.com', 'http://www.amazon.com' %>.
+        </div>
+      </div>
+    </footer>
+<% end %>

@@ -1,0 +1,36 @@
+header {
+  font-family: "Amatic SC", cursive;
+  font-size: 20px;
+  background-color: #666666;
+
+}
+
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  background: #f2f5f8;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app-cont {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.app-cont-thin {
+  max-width: 650px;
+  background: #fff;
+  padding: 1em 0;
+  border-radius: 3px;
+}
+
+
+//font-family: 'Amatic SC', cursive;
+//font-family: 'Inconsolata', monospace;
+//font-family: 'Noto Serif', serif;
+//font-family: 'Titillium Web', sans-serif;
+//font-family: 'Yanone Kaffeesatz', sans-serif;
