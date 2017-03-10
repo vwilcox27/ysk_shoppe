@@ -1,17 +1,22 @@
 header {
   font-family: "Amatic SC", cursive;
-  font-size: 20px;
+  font-size: 100px;
   background-color: #f2f5f8;
+  align-content: space-between;
 
 }
 
 body {
   font-family: 'Amatic SC', cursive;
-  font-size: 20px;
-  background: #f2f5f8;
+  font-size: 40px;
+  background-color: #000000;
   font-weight: 300;
 }
-
+div {
+  font-family: "Amatic SC", cursive;
+  font-size: inherit;
+  background-color: #999999;
+}
 a {
   text-decoration: none;
 }

@@ -5,7 +5,7 @@ class ArtController < ApplicationController
     @art = @art.group_by(&:art_category)
   end
   def show
-    @art = Shoppe::Art.root.find_by_permalink(params[:permalink])
+    # @art = Shoppe::Art.root.find_by_permalink(params[:permalink])
   end
 
 end

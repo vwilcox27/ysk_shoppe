@@ -25,7 +25,6 @@ Rails.application.routes.draw do
   get "art", to: "art#show", as: "art"
   # post "art/:permalink", to: "art#buy", as: "art2"
 
-  get "clothing", to: "clothing#show", as: "clothing"
   get "basket", to: "orders#show"
   delete "basket", to: "orders#destroy"
 
@@ -34,6 +33,7 @@ Rails.application.routes.draw do
   match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
 
   get "checkout/paypal", to: "orders#paypal"
+  # get ':action' => 'static#:action'
 
   # root to: "art#index"
   # Example of regular route:
