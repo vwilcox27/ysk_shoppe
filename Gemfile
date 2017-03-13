@@ -8,6 +8,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
@@ -39,5 +40,6 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'rails-assets-tether', '>= 1.3.3', source: 'https://rails-assets.org'
 gem 'therubyracer'  # If using Ruby
 
-gem 'less-rails-bootstrap'
-gem 'drunken_parrot_flat_ui_lite-rails'
+# gem 'less-rails-bootstrap'
+# gem 'drunken_parrot_flat_ui_lite-rails'
+# gem 'shopr', '~> 1.1', '>= 1.1.2'

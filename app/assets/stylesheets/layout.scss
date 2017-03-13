@@ -6,16 +6,16 @@ header {
 
 }
 
-body {
-  font-family: 'Amatic SC', cursive;
-  font-size: 40px;
-  background-color: #000000;
-  font-weight: 300;
-}
+//body {
+//  font-family: 'Amatic SC', cursive;
+//  font-size: 40px;
+//  background-color: #730E15;
+//  font-weight: 300;
+//}
 div {
   font-family: "Amatic SC", cursive;
   font-size: inherit;
-  background-color: #999999;
+//  background-color: #999999;
 }
 a {
   text-decoration: none;
@@ -46,6 +46,12 @@ a {
       color: rgba(255, 153, 153, 0.83);
     }
   }
+.cart {
+  color: #730E15;
+  text-align: right;
+  font-size: 50px;
+
+}
 }
 
 //font-family: 'Amatic SC', cursive;
