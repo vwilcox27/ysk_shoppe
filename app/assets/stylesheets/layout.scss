@@ -15,7 +15,7 @@ header {
 div {
   font-family: "Amatic SC", cursive;
   font-size: inherit;
-//  background-color: #999999;
+  background-color: #000000;
 }
 a {
   text-decoration: none;
@@ -48,10 +48,20 @@ a {
   }
 .cart {
   color: #730E15;
-  text-align: right;
+  text-align: center;
   font-size: 50px;
 
+
 }
+zhome {
+    text-align: center;
+    font-family: Amatic SC, cursive;
+    text-space: 25px;
+    text-decoration: underline;
+    font-size: 10px;
+
+    background-color: #000000;
+    /*align-content: space-between> */}
 }
 
 //font-family: 'Amatic SC', cursive;

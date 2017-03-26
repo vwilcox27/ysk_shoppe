@@ -1,8 +1,6 @@
 
 
-<!--<h1></h1>-->
 
-<!--<p>you should know...</p>-->
 
 <!DOCTYPE html>
 <html>
@@ -11,40 +9,81 @@
 <!-- Bootstrap -->
 <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Inconsolata|Noto+Serif|Titillium+Web|Yanone+Kaffeesatz" rel="stylesheet">
+<div class="container-fluid"> </div>
 
 
-<body>
 
-<style>
+  <style>
     h1, p {
         font-family: "Amatic SC", cursive;
         font-size: 60px;
         color: #730E15;
+        background-color : transparent;
         max-height: 100%;
         height: auto;
         text-align: center;
         horiz-align: center;
+
     }
-/*<div>*/
-
-/*body{*/
-
-        /*padding: 15%*/
-        /*-webkit-border-image: url('home.png');*/
-        /*-o-border-image: url('home.png');*/
-        /*border-image: url('home.png');*/
-/*-moz-background-size: cover;*/
-/*-o-background-size: cover;*/
-        /*background-size: contain;*/
-        /*width: auto;*/
+    body    {
+        background: url("home.png"), center, center;
+        background-size: cover;
+        background-repeat:no-repeat;
+        /*background-position: center center;*/
+    }
+    /*img {*/
+        /*width: 100%;*/
         /*height: auto;*/
-/*}*/
+        /*position: relative;*/
+    /*}*/
+
+    .center {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        background-color : transparent;
+    }
+
 </style>
-<div class="container">
-<h1>Hello World!</h1>
+</head>
 
-<p>This page has an image as the background!</p>
+<body>
+<!--{-->
+<!--background-image: url("paper.gif");-->
+<!--background-color: #cccccc;-->
+<!--<img src="home.png" >-->
 
+<div class= "container-fluid center">
+
+<h1>
+  YSK [ Exclusive ]
+
+</h1>
+<%= link_to "Home", root_path %>
+<%= link_to "Art", art_path %>
+<%= link_to "Look", lookbook_path %>
+
+<%= link_to "About", about_path %>
+<%= link_to "Contact", contact_path %>
+<%= link_to "View basket", basket_path %>
+
+  <p>you should know...</p>
 </div>
+<!--<div>-->
+
+
+
+
+
+
+
+
+
+
+
+<!--</div>-->
 </body>
 </html>

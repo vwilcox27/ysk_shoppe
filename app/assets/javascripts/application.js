@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require bootstrap
+//= require bootstrap.min
 //= require_tree .
 //= require shoppe/stripe/form_handler

@@ -11,35 +11,48 @@
   </script>
 
   <![endif]-->
+  <style>
+      /*body {*/
+          /*text-align: center;*/
+          /*font-family: Amatic SC, cursive;*/
+          /*text-space: 50px;*/
+          /*font-size: 25px;*/
+          /*letter-spacing: 13px;*/
+          /*background-color: #000000;*/
+          /*background-image: url ('home.png')*/
+      /*}*/
+
+  </style>
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-inverse">
-    <div>
-      <%= link_to "YSK [Exclusive]", '#', id: "logo"%>
-    <nav>
-      <div style="text-align: center">
-        <%= link_to "Home", root_path %>
-        <%= link_to "Art", art_path %>
-        <%= link_to "Look", lookbook_path %>
+<!--<header>-->
+      <!--<body>-->
+     <p>     <!--<div class="home">-->
+            <%= link_to "Home", root_path %>
+            <%= link_to "Art", art_path %>
+            <%= link_to "Look", lookbook_path %>
 
-        <%= link_to "About", about_path %>
-        <%= link_to "Contact", contact_path %>
-        <%= link_to "View basket", basket_path %>
-        <%= flash[:notice] %>
+            <%= link_to "About", about_path %>
+            <%= link_to "Contact", contact_path %>
+            <%= link_to "View basket", basket_path %>
+            <!--</div>-->
+            <!--<div>-->
+            <%= flash[:notice] %>
+
         <%= link_to "Checkout", checkout_path %>
-        <% if current_order %>
-            <p.cart>
-              You have <%= pluralize current_order.total_items, 'item'%> in your cart which cost
-              <%= number_to_currency current_order.total_before_tax %>.
-            </p.cart>
-        <% end %>
-        <%= yield %>
-    </div>
-    </nav>
-  </div>
-
-
-</header>
-
+            <% if current_order %>
+                <!--<p class="cart">-->
+                  <!--You have <%= pluralize current_order.total_items, 'item'%> in your cart which cost-->
+                  <%= number_to_currency current_order.total_before_tax %>.
+                <!--</p>-->
+            <% end %>
+            <%= yield %>
+          <!--</div>-->
+     </p>
 </body>
+
+
+
+
+
 </html>
